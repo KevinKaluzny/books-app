@@ -13,7 +13,7 @@ function initActions() {
     const bookImages = document.querySelectorAll('.book__image');
 
     for (let bookImage of bookImages) {
-        
+        bookImage.addEventListener('dblclick', function(event) {});
     }
 }
 
