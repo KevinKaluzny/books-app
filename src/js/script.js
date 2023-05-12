@@ -21,6 +21,7 @@ function initActions() {
         bookImage.addEventListener('dblclick', function() {
             this.classList.add('favorite');
             const id = this.getAttribute('data-id');
+            favoriteBooks.push(id);
         });
     }
 }
