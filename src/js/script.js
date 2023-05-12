@@ -12,3 +12,5 @@ renderBooks();
 function initActions() {
     
 }
+
+initActions();
