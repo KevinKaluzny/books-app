@@ -20,8 +20,15 @@ function initActions() {
         })
         bookImage.addEventListener('dblclick', function() {
             const id = this.getAttribute('data-id');
-            this.classList.add('favorite');
-            favoriteBooks.push(id);
+
+            if (favoriteBooks.includes(id)) {
+                this.classList.remove('favorite');
+                const index = favoriteBooks.indexOf(id);
+                favoriteBooks.splice(index, 1);
+            } else {
+                this.classList.add('favorite');
+                favoriteBooks.push(id);
+            }
         });
     }
 }
