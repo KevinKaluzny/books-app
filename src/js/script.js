@@ -1,5 +1,7 @@
 function renderBooks() {
-    const template = Handlebars.compile(document.querySelector('#template-book').innerHTML);
+    for (let data in dataSource.books) {
+        const template = Handlebars.compile(document.querySelector('#template-book').innerHTML);
+    }
 }
 
 renderBooks();
