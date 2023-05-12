@@ -16,7 +16,9 @@ function initActions() {
         bookImage.addEventListener('click', function(event) {
             event.preventDefault();
         })
-        bookImage.addEventListener('dblclick', function() {});
+        bookImage.addEventListener('dblclick', function() {
+            this.classList.add('favorite');
+        });
     }
 }
 
