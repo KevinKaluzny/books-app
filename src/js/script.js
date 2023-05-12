@@ -19,8 +19,8 @@ function initActions() {
             event.preventDefault();
         })
         bookImage.addEventListener('dblclick', function() {
-            this.classList.add('favorite');
             const id = this.getAttribute('data-id');
+            this.classList.add('favorite');
             favoriteBooks.push(id);
         });
     }
