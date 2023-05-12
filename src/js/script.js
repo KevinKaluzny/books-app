@@ -8,3 +8,7 @@ function renderBooks() {
 }
 
 renderBooks();
+
+function initActions() {
+    
+}
