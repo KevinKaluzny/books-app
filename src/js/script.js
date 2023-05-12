@@ -13,6 +13,9 @@ function initActions() {
     const bookImages = document.querySelectorAll('.book__image');
 
     for (let bookImage of bookImages) {
+        bookImage.addEventListener('click', function(event) {
+            event.preventDefault();
+        })
         bookImage.addEventListener('dblclick', function() {});
     }
 }
