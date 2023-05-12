@@ -10,7 +10,7 @@ function renderBooks() {
 renderBooks();
 
 function initActions() {
-    
+    const bookImages = document.querySelectorAll('.book__image');
 }
 
 initActions();
