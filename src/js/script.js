@@ -3,6 +3,7 @@ function renderBooks() {
         const template = Handlebars.compile(document.querySelector('#template-book').innerHTML);
         const html = template(dataSource.books[data]);
         const booksList = document.querySelector('.books-list');
+        booksList.innerHTML += html;
     }
 }
 
