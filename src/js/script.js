@@ -14,6 +14,7 @@ renderBooks();
 
 function initActions() {
   const booksList = document.querySelector('.books-list');
+  const form = document.querySelector('.filters');
 
   booksList.addEventListener('click', function (event) {
     event.preventDefault();
