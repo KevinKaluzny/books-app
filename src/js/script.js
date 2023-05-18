@@ -33,7 +33,13 @@ function initActions() {
       }
     }
   });
-  form.addEventListener('change', function() {});
+  form.addEventListener('change', function(event) {
+    const clickedElem = event.target;
+
+    if (clickedElem.tagName == 'INPUT' && clickedElem.getAttribute('type') && clickedElem.getAttribute('name')) {
+      console.log(clickedElem.getAttribute('value'));
+    }
+  });
 }
 
 initActions();
