@@ -1,4 +1,5 @@
 const favoriteBooks = [];
+const filters = [];
 
 function renderBooks() {
   for (let data in dataSource.books) {
