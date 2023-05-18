@@ -33,6 +33,7 @@ function initActions() {
       }
     }
   });
+  form.addEventListener('change', function() {});
 }
 
 initActions();
