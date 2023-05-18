@@ -37,7 +37,14 @@ function initActions() {
     const clickedElem = event.target;
 
     if (clickedElem.tagName == 'INPUT' && clickedElem.getAttribute('type') && clickedElem.getAttribute('name')) {
-      console.log(clickedElem.getAttribute('value'));
+      const value = clickedElem.getAttribute('value');
+
+      if (clickedElem.checked == true) {
+        filters.push(value);
+      } else {
+        const indexOf = filters.indexOf(value);
+        filters.splice(indexOf, 1);
+      }
     }
   });
 }
