@@ -80,10 +80,10 @@ function determineRatingBgc(rating) {
   } else if (rating > 6 && rating <= 8) {
     color1 = '#b4df5b';
     color2 = '#b4df5b';
-  } else if (rating < 6) {
+  } else if (rating > 8 && rating <= 9) {
     color1 = '#299a0b';
     color2 = '#299a0b';
-  } else if (rating < 6) {
+  } else if (rating > 9) {
     color1 = '#ff0084';
     color2 = '#ff0084';
   }
