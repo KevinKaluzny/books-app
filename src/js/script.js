@@ -64,6 +64,8 @@ function filterBooks() {
 
     if (filters.includes('adults') && !adults) {
       book.classList.add('hidden');
+    } else {
+      book.classList.remove('hidden');
     }
   }
 }
