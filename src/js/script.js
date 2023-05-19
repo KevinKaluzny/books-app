@@ -71,5 +71,6 @@ function filterBooks() {
 }
 
 function determineRatingBgc(rating) {
-
+  let color1;
+  let color2;
 }
