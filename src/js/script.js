@@ -73,4 +73,18 @@ function filterBooks() {
 function determineRatingBgc(rating) {
   let color1;
   let color2;
+
+  if (rating < 6) {
+    color1 = '#fefcea';
+    color2 = '#f1da36';
+  } else if (rating > 6 && rating <= 8) {
+    color1 = '#b4df5b';
+    color2 = '#b4df5b';
+  } else if (rating < 6) {
+    color1 = '#299a0b';
+    color2 = '#299a0b';
+  } else if (rating < 6) {
+    color1 = '#ff0084';
+    color2 = '#ff0084';
+  }
 }
