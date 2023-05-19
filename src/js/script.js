@@ -54,5 +54,5 @@ function initActions() {
 initActions();
 
 function filterBooks() {
-  
+  const booksList = document.querySelector('.books-list');
 }
