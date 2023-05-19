@@ -62,7 +62,7 @@ function filterBooks() {
     const adults = dataSource.books[dataId - 1].details.adults;
     const nonFiction = dataSource.books[dataId - 1].details.nonFiction;
 
-    if (filters.includes('adults') && !adults) {
+    if ((filters.includes('adults') && !adults) || (filters.includes('nonFiction') && !nonFiction)) {
       book.classList.add('hidden');
     } else {
       book.classList.remove('hidden');
