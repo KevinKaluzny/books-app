@@ -55,4 +55,5 @@ initActions();
 
 function filterBooks() {
   const booksList = document.querySelector('.books-list');
+  const books = booksList.querySelectorAll('.book');
 }
