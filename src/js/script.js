@@ -52,3 +52,7 @@ function initActions() {
 }
 
 initActions();
+
+function filterBooks() {
+  
+}
