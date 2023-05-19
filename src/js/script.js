@@ -4,6 +4,7 @@ const filters = [];
 function renderBooks() {
   for (let data in dataSource.books) {
     const ratingBgc = determineRatingBgc(dataSource.books[data].rating);
+    const ratingWidth = dataSource.books[data].rating * 10;
     const template = Handlebars.compile(document.querySelector('#template-book').innerHTML);
     const html = template(dataSource.books[data]);
     const booksList = document.querySelector('.books-list');
