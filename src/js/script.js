@@ -69,3 +69,7 @@ function filterBooks() {
     }
   }
 }
+
+function determineRatingBgc(rating) {
+
+}
