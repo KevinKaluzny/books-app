@@ -55,7 +55,7 @@ initActions();
 
 function filterBooks() {
   const booksList = document.querySelector('.books-list');
-  const books = booksList.querySelectorAll('.book');
+  const books = booksList.querySelectorAll('.book__image');
 
   for (let book of books) {
   
