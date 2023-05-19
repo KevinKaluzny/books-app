@@ -9,8 +9,7 @@ function renderBooks() {
     const combinedData = dataSource.books[data];
     combinedData.ratingBgc = ratingBgc;
     combinedData.ratingWidth = ratingWidth;
-    console.log(combinedData);
-    const html = template(dataSource.books[data]);
+    const html = template(combinedData);
     const booksList = document.querySelector('.books-list');
     booksList.innerHTML += html;
   }
