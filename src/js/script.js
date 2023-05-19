@@ -58,6 +58,6 @@ function filterBooks() {
   const books = booksList.querySelectorAll('.book__image');
 
   for (let book of books) {
-  
+    const dataId = book.getAttribute('data-id');
   }
 }
