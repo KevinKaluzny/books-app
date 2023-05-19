@@ -46,6 +46,8 @@ function initActions() {
         filters.splice(indexOf, 1);
       }
     }
+
+    filterBooks();
   });
 }
 
