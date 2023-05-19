@@ -6,6 +6,10 @@ function renderBooks() {
     const ratingBgc = determineRatingBgc(dataSource.books[data].rating);
     const ratingWidth = dataSource.books[data].rating * 10;
     const template = Handlebars.compile(document.querySelector('#template-book').innerHTML);
+    const combinedData = dataSource.books[data];
+    combinedData.ratingBgc = ratingBgc;
+    combinedData.ratingWidth = ratingWidth;
+    console.log(combinedData);
     const html = template(dataSource.books[data]);
     const booksList = document.querySelector('.books-list');
     booksList.innerHTML += html;
