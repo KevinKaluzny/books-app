@@ -60,5 +60,6 @@ function filterBooks() {
   for (let book of books) {
     const dataId = book.getAttribute('data-id');
     const adults = dataSource.books[dataId - 1].details.adults;
+    const nonFiction = dataSource.books[dataId - 1].details.nonFiction;
   }
 }
