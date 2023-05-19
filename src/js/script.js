@@ -87,4 +87,6 @@ function determineRatingBgc(rating) {
     color1 = '#ff0084';
     color2 = '#ff0084';
   }
+
+  const ratingBgc = 'linear-gradient(to bottom, ' + color1 + ' 0%, ' + color2 + ' 100%);';
 }
