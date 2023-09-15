@@ -108,4 +108,4 @@ class BooksList {
   }
 }
 
-const app = new BooksList(dataSource);
+new BooksList(dataSource);
