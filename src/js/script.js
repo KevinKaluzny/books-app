@@ -108,4 +108,5 @@ class BooksList {
   }
 }
 
+// eslint-disable-next-line
 new BooksList(dataSource);
